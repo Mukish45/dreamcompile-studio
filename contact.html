@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Mukish | Data Scientist & AI Enthusiast</title>
-    <meta name="description" content="Get in touch with me for collaborations, consultations, or just to chat about AI and technology.">
+    <title>Contact - Mukish | Let's Connect</title>
+    <meta name="description" content="Get in touch with me for collaboration opportunities, project discussions, or just to say hello.">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,60 +19,51 @@
     <link rel="stylesheet" href="styles/animations.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav container">
-            <div class="nav__brand">
-                <a href="index.html" class="nav__logo">
-                    <span class="gradient-text">Mukish</span>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-text">Mukish</span>
+                    <span class="brand-accent">.</span>
                 </a>
             </div>
             
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="about.html" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="projects.html" class="nav__link">Projects</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="blog.html" class="nav__link">Blog</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="contact.html" class="nav__link active">Contact</a>
-                    </li>
-                </ul>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
                 
-                <div class="nav__actions">
-                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon sun-icon">☀️</span>
+                    <span class="theme-icon moon-icon">🌙</span>
+                </button>
             </div>
             
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="fas fa-bars"></i>
+            <div class="nav-hamburger" id="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="hero section" style="padding: 8rem 0 3rem;">
+        <section class="hero">
             <div class="container">
-                <div class="hero__content" style="grid-template-columns: 1fr; text-align: center;">
-                    <div class="hero__text fade-in">
-                        <h1 class="hero__title">
+                <div class="hero-content" style="grid-template-columns: 1fr; text-align: center; padding-top: 100px;">
+                    <div class="hero-text fade-in">
+                        <h1 class="hero-title">
                             Let's <span class="gradient-text">Connect</span>
                         </h1>
-                        <p class="hero__description" style="max-width: 600px; margin: 0 auto;">
-                            Whether you have a project in mind, want to collaborate, or just want to chat about AI and technology, 
-                            I'd love to hear from you. Drop me a message and let's build something amazing together!
+                        <p class="hero-description" style="max-width: 600px; margin: 0 auto;">
+                            I'm always excited to discuss new opportunities, share ideas, and collaborate on 
+                            innovative projects. Whether you have a question, a proposal, or just want to say hi, 
+                            I'd love to hear from you!
                         </p>
                     </div>
                 </div>
@@ -82,49 +73,48 @@
         <!-- Contact Section -->
         <section class="section">
             <div class="container">
-                <div class="contact__content">
+                <div class="contact-layout">
                     <!-- Contact Form -->
-                    <div class="contact__form-section slide-up">
-                        <h2 class="contact__title">Send me a message</h2>
-                        <form class="contact__form" id="contact-form">
-                            <div class="form__row">
-                                <div class="form__group">
-                                    <label for="name" class="form__label">Your Name</label>
-                                    <input type="text" id="name" name="name" class="form__input" required>
-                                </div>
-                                <div class="form__group">
-                                    <label for="email" class="form__label">Email Address</label>
-                                    <input type="email" id="email" name="email" class="form__input" required>
-                                </div>
+                    <div class="contact-form-section fade-in">
+                        <h2 class="contact-title">Send me a message</h2>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
                             </div>
                             
-                            <div class="form__group">
-                                <label for="subject" class="form__label">Subject</label>
-                                <select id="subject" name="subject" class="form__input" required>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
                                     <option value="">Select a topic</option>
                                     <option value="collaboration">Collaboration Opportunity</option>
-                                    <option value="consultation">AI/ML Consultation</option>
-                                    <option value="project">Project Discussion</option>
+                                    <option value="hiring">Hiring/Job Opportunity</option>
+                                    <option value="consultation">Consultation</option>
                                     <option value="speaking">Speaking Engagement</option>
-                                    <option value="mentorship">Mentorship Request</option>
+                                    <option value="general">General Inquiry</option>
                                     <option value="other">Other</option>
                                 </select>
                             </div>
                             
-                            <div class="form__group">
-                                <label for="message" class="form__label">Your Message</label>
-                                <textarea id="message" name="message" rows="6" class="form__input" placeholder="Tell me about your project, ideas, or questions..." required></textarea>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, idea, or just say hello..." required></textarea>
                             </div>
                             
-                            <div class="form__group">
+                            <div class="form-group checkbox-group">
                                 <label class="checkbox-label">
-                                    <input type="checkbox" id="newsletter" name="newsletter" class="checkbox">
-                                    <span class="checkbox-custom"></span>
-                                    Subscribe to my newsletter for AI insights and updates
+                                    <input type="checkbox" id="subscribe" name="subscribe">
+                                    <span class="checkmark"></span>
+                                    Subscribe to my newsletter for AI and tech insights
                                 </label>
                             </div>
                             
-                            <button type="submit" class="btn btn--primary btn--large form__submit">
+                            <button type="submit" class="btn btn-primary btn-large">
                                 <i class="fas fa-paper-plane"></i>
                                 Send Message
                             </button>
@@ -132,107 +122,70 @@
                     </div>
 
                     <!-- Contact Info -->
-                    <div class="contact__info-section slide-up">
-                        <h2 class="contact__title">Get in touch</h2>
-                        
-                        <div class="contact__info">
-                            <div class="contact__item">
-                                <div class="contact__icon">
+                    <div class="contact-info-section fade-in">
+                        <h2 class="contact-title">Get in touch</h2>
+                        <p class="contact-description">
+                            Feel free to reach out through any of these channels. I typically respond 
+                            within 24 hours and would love to discuss your ideas!
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
                                     <i class="fas fa-envelope"></i>
                                 </div>
-                                <div class="contact__details">
+                                <div class="contact-details">
                                     <h3>Email</h3>
                                     <p>mukish@example.com</p>
-                                    <span>I usually respond within 24 hours</span>
+                                    <a href="mailto:mukish@example.com" class="contact-link">Send Email</a>
                                 </div>
                             </div>
 
-                            <div class="contact__item">
-                                <div class="contact__icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="contact__details">
-                                    <h3>Phone</h3>
-                                    <p>+1 (555) 123-4567</p>
-                                    <span>Available for calls on weekdays</span>
-                                </div>
-                            </div>
-
-                            <div class="contact__item">
-                                <div class="contact__icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="contact__details">
-                                    <h3>Location</h3>
-                                    <p>San Francisco, CA</p>
-                                    <span>Open to remote work & travel</span>
-                                </div>
-                            </div>
-
-                            <div class="contact__item">
-                                <div class="contact__icon">
-                                    <i class="fas fa-calendar"></i>
-                                </div>
-                                <div class="contact__details">
-                                    <h3>Availability</h3>
-                                    <p>Currently accepting new projects</p>
-                                    <span>1-2 week turnaround for initial response</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Social Links -->
-                        <div class="contact__social">
-                            <h3>Connect on social media</h3>
-                            <div class="social__links">
-                                <a href="#" class="social__link" aria-label="LinkedIn">
+                            <div class="contact-method">
+                                <div class="contact-icon">
                                     <i class="fab fa-linkedin"></i>
-                                    <span>LinkedIn</span>
-                                </a>
-                                <a href="#" class="social__link" aria-label="GitHub">
-                                    <i class="fab fa-github"></i>
-                                    <span>GitHub</span>
-                                </a>
-                                <a href="#" class="social__link" aria-label="Twitter">
+                                </div>
+                                <div class="contact-details">
+                                    <h3>LinkedIn</h3>
+                                    <p>Let's connect professionally</p>
+                                    <a href="#" class="contact-link" target="_blank">View Profile</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
                                     <i class="fab fa-twitter"></i>
-                                    <span>Twitter</span>
-                                </a>
-                                <a href="#" class="social__link" aria-label="Medium">
-                                    <i class="fab fa-medium"></i>
-                                    <span>Medium</span>
-                                </a>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Twitter</h3>
+                                    <p>Follow for AI insights</p>
+                                    <a href="#" class="contact-link" target="_blank">@mukish_dev</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>GitHub</h3>
+                                    <p>Check out my code</p>
+                                    <a href="#" class="contact-link" target="_blank">@mukish</a>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- FAQ -->
-                        <div class="contact__faq">
-                            <h3>Quick Questions</h3>
-                            <div class="faq__item">
-                                <div class="faq__question">
-                                    <i class="fas fa-question-circle"></i>
-                                    What's your hourly rate for consulting?
+                        <!-- Response Time -->
+                        <div class="response-info">
+                            <h3>Response Time</h3>
+                            <div class="response-stats">
+                                <div class="response-stat">
+                                    <span class="response-number">< 24h</span>
+                                    <span class="response-label">Average Response</span>
                                 </div>
-                                <div class="faq__answer">
-                                    My consulting rates vary based on project scope and timeline. 
-                                    Let's discuss your specific needs!
-                                </div>
-                            </div>
-                            <div class="faq__item">
-                                <div class="faq__question">
-                                    <i class="fas fa-question-circle"></i>
-                                    Do you work on long-term projects?
-                                </div>
-                                <div class="faq__answer">
-                                    Yes! I'm open to both short-term consulting and long-term partnerships.
-                                </div>
-                            </div>
-                            <div class="faq__item">
-                                <div class="faq__question">
-                                    <i class="fas fa-question-circle"></i>
-                                    Can you help with AI strategy?
-                                </div>
-                                <div class="faq__answer">
-                                    Absolutely! I love helping companies develop their AI roadmap and implementation strategy.
+                                <div class="response-stat">
+                                    <span class="response-number">100%</span>
+                                    <span class="response-label">Response Rate</span>
                                 </div>
                             </div>
                         </div>
@@ -241,59 +194,99 @@
             </div>
         </section>
 
-        <!-- Call to Action -->
-        <section class="section" style="background: var(--bg-secondary);">
+        <!-- FAQ Section -->
+        <section class="section">
             <div class="container">
-                <div class="collaboration-cta fade-in">
-                    <div class="cta__content">
-                        <h2 class="cta__title">Ready to Start Something Amazing?</h2>
-                        <p class="cta__description">
-                            I'm always excited to work on innovative projects that push the boundaries of AI and technology. 
-                            Whether you're a startup looking to implement AI or an enterprise seeking to optimize your ML pipeline, 
-                            let's explore how we can work together.
+                <h2 class="section-title fade-in">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item fade-in">
+                        <h3 class="faq-question">What kind of projects do you work on?</h3>
+                        <p class="faq-answer">
+                            I specialize in AI and machine learning projects, particularly involving large language models, 
+                            chatbots, data analysis, and full-stack applications. I'm always interested in innovative 
+                            projects that push the boundaries of technology.
                         </p>
-                        
-                        <div class="cta__features">
-                            <div class="feature__item">
-                                <i class="fas fa-rocket"></i>
-                                <h4>AI Implementation</h4>
-                                <p>From prototype to production-ready AI solutions</p>
-                            </div>
-                            <div class="feature__item">
-                                <i class="fas fa-chart-line"></i>
-                                <h4>Data Strategy</h4>
-                                <p>Maximize the value of your data assets</p>
-                            </div>
-                            <div class="feature__item">
-                                <i class="fas fa-users"></i>
-                                <h4>Team Training</h4>
-                                <p>Upskill your team in modern AI practices</p>
-                            </div>
-                            <div class="feature__item">
-                                <i class="fas fa-lightbulb"></i>
-                                <h4>Innovation Consulting</h4>
-                                <p>Strategic guidance for AI-driven innovation</p>
-                            </div>
+                    </div>
+
+                    <div class="faq-item fade-in">
+                        <h3 class="faq-question">Are you available for freelance work?</h3>
+                        <p class="faq-answer">
+                            Yes, I'm open to freelance and consulting opportunities! I work with startups, 
+                            established companies, and individual entrepreneurs on AI implementation, 
+                            data science projects, and technical consulting.
+                        </p>
+                    </div>
+
+                    <div class="faq-item fade-in">
+                        <h3 class="faq-question">Do you offer mentoring or coaching?</h3>
+                        <p class="faq-answer">
+                            I occasionally take on mentoring opportunities for aspiring data scientists and 
+                            AI developers. If you're looking for guidance in your AI journey, feel free to reach out 
+                            and we can discuss how I might be able to help.
+                        </p>
+                    </div>
+
+                    <div class="faq-item fade-in">
+                        <h3 class="faq-question">Can you speak at events or conferences?</h3>
+                        <p class="faq-answer">
+                            Absolutely! I enjoy sharing knowledge about AI, machine learning, and data science. 
+                            I've spoken at various tech meetups and conferences. Contact me with details about 
+                            your event and I'll be happy to consider it.
+                        </p>
+                    </div>
+
+                    <div class="faq-item fade-in">
+                        <h3 class="faq-question">What's your preferred communication method?</h3>
+                        <p class="faq-answer">
+                            For initial contact, email works best as it allows me to give thoughtful responses. 
+                            For ongoing projects, I'm flexible and can adapt to whatever communication style 
+                            works best for the team (Slack, Discord, video calls, etc.).
+                        </p>
+                    </div>
+
+                    <div class="faq-item fade-in">
+                        <h3 class="faq-question">Do you work with international clients?</h3>
+                        <p class="faq-answer">
+                            Yes, I work with clients globally! I'm comfortable with remote collaboration and 
+                            have experience working across different time zones. I can adapt my schedule 
+                            to accommodate important meetings and project requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collaboration CTA -->
+        <section class="collaboration-section">
+            <div class="container">
+                <div class="collaboration-content fade-in">
+                    <h2 class="collaboration-title">Ready to Collaborate?</h2>
+                    <p class="collaboration-description">
+                        Whether you're a startup looking to implement AI, an enterprise needing data science 
+                        expertise, or a fellow developer wanting to collaborate on open source projects, 
+                        I'm here to help bring your ideas to life.
+                    </p>
+                    <div class="collaboration-features">
+                        <div class="feature">
+                            <i class="fas fa-rocket"></i>
+                            <span>Fast Turnaround</span>
                         </div>
-                        
-                        <div class="cta__buttons">
-                            <a href="#contact-form" class="btn btn--primary btn--large">
-                                <i class="fas fa-comment"></i>
-                                Start the Conversation
-                            </a>
-                            <a href="about.html" class="btn btn--secondary btn--large">
-                                <i class="fas fa-user"></i>
-                                Learn More About Me
-                            </a>
+                        <div class="feature">
+                            <i class="fas fa-code"></i>
+                            <span>Clean Code</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-comments"></i>
+                            <span>Clear Communication</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Reliable Delivery</span>
                         </div>
                     </div>
-                    
-                    <div class="cta__visual">
-                        <div class="visual__item">
-                            <div class="visual__icon">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                        </div>
+                    <div class="collaboration-actions">
+                        <a href="#contact-form" class="btn btn-primary">Start a Project</a>
+                        <a href="projects.html" class="btn btn-secondary">View My Work</a>
                     </div>
                 </div>
             </div>
@@ -303,419 +296,49 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer__content">
-                <div class="footer__main">
-                    <div class="footer__brand">
-                        <h3 class="gradient-text">Mukish</h3>
-                        <p>Data Scientist & AI Enthusiast</p>
-                    </div>
-                    
-                    <div class="footer__links">
-                        <div class="footer__section">
-                            <h4 class="footer__title">Navigation</h4>
-                            <ul class="footer__list">
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="projects.html">Projects</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="footer__section">
-                            <h4 class="footer__title">Connect</h4>
-                            <div class="footer__social">
-                                <a href="#" class="social-link" aria-label="LinkedIn">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="#" class="social-link" aria-label="GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="social-link" aria-label="Twitter">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="social-link" aria-label="Email">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-title">Mukish</h3>
+                    <p class="footer-description">
+                        Data scientist passionate about AI research and building 
+                        intelligent systems that make a difference.
+                    </p>
                 </div>
                 
-                <div class="footer__bottom">
-                    <p>&copy; 2023 Mukish. All rights reserved.</p>
-                    <p>Built with passion and lots of coffee ☕</p>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Navigation</h4>
+                        <ul class="footer-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Connect</h4>
+                        <ul class="footer-social">
+                            <li><a href="#" target="_blank">GitHub</a></li>
+                            <li><a href="#" target="_blank">LinkedIn</a></li>
+                            <li><a href="#" target="_blank">Twitter</a></li>
+                            <li><a href="#" target="_blank">Kaggle</a></li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2023 Mukish. Built with ❤️ and lots of coffee.
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- JavaScript Files -->
     <script src="scripts/main.js"></script>
     <script src="scripts/animations.js"></script>
-
-    <style>
-        .contact__content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: start;
-        }
-
-        .contact__title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            color: var(--text-primary);
-        }
-
-        .contact__form {
-            background: var(--bg-secondary);
-            padding: 2rem;
-            border-radius: 1rem;
-            border: 1px solid var(--border-color);
-        }
-
-        .form__row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-
-        .form__group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form__label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-
-        .form__input {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            border: 2px solid var(--border-color);
-            border-radius: 0.5rem;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            font-size: 1rem;
-            font-family: inherit;
-            transition: all 0.3s ease;
-        }
-
-        .form__input:focus {
-            outline: none;
-            border-color: var(--primary-500);
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-        }
-
-        .form__input::placeholder {
-            color: var(--text-muted);
-        }
-
-        .checkbox-label {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            cursor: pointer;
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-
-        .checkbox {
-            opacity: 0;
-            position: absolute;
-        }
-
-        .checkbox-custom {
-            width: 20px;
-            height: 20px;
-            border: 2px solid var(--border-color);
-            border-radius: 0.25rem;
-            background: var(--bg-primary);
-            position: relative;
-            transition: all 0.3s ease;
-        }
-
-        .checkbox:checked + .checkbox-custom {
-            background: var(--primary-500);
-            border-color: var(--primary-500);
-        }
-
-        .checkbox:checked + .checkbox-custom::after {
-            content: '✓';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-weight: bold;
-            font-size: 12px;
-        }
-
-        .form__submit {
-            width: 100%;
-            margin-top: 1rem;
-        }
-
-        .contact__info {
-            margin-bottom: 2rem;
-        }
-
-        .contact__item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: var(--bg-secondary);
-            border-radius: 0.75rem;
-            border: 1px solid var(--border-color);
-            transition: all 0.3s ease;
-        }
-
-        .contact__item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px var(--shadow-color);
-        }
-
-        .contact__icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 3rem;
-            height: 3rem;
-            background: linear-gradient(135deg, var(--primary-500), var(--accent-purple));
-            border-radius: 0.75rem;
-            color: white;
-            font-size: 1.25rem;
-            flex-shrink: 0;
-        }
-
-        .contact__details h3 {
-            font-size: 1.125rem;
-            font-weight: 600;
-            margin-bottom: 0.25rem;
-            color: var(--text-primary);
-        }
-
-        .contact__details p {
-            font-weight: 500;
-            margin-bottom: 0.25rem;
-            color: var(--text-primary);
-        }
-
-        .contact__details span {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-        }
-
-        .contact__social {
-            margin-bottom: 2rem;
-        }
-
-        .contact__social h3 {
-            font-size: 1.125rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-
-        .social__links {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-
-        .social__link {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 1rem;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 0.75rem;
-            color: var(--text-primary);
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .social__link:hover {
-            background: var(--primary-500);
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        .social__link i {
-            font-size: 1.25rem;
-        }
-
-        .contact__faq h3 {
-            font-size: 1.125rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-
-        .faq__item {
-            margin-bottom: 1rem;
-        }
-
-        .faq__question {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .faq__question i {
-            color: var(--primary-500);
-        }
-
-        .faq__answer {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-            line-height: 1.5;
-            margin-left: 2rem;
-        }
-
-        .collaboration-cta {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .cta__features {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .feature__item {
-            text-align: center;
-            padding: 1.5rem;
-            background: var(--bg-primary);
-            border-radius: 0.75rem;
-            border: 1px solid var(--border-color);
-        }
-
-        .feature__item i {
-            font-size: 2rem;
-            color: var(--primary-500);
-            margin-bottom: 1rem;
-        }
-
-        .feature__item h4 {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--text-primary);
-        }
-
-        .feature__item p {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
-        }
-
-        .cta__buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .visual__item {
-            text-align: center;
-        }
-
-        .visual__icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 8rem;
-            height: 8rem;
-            background: linear-gradient(135deg, var(--primary-500), var(--accent-purple));
-            border-radius: 50%;
-            font-size: 3rem;
-            color: white;
-            animation: floating 3s ease-in-out infinite;
-        }
-
-        @media (max-width: 768px) {
-            .contact__content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .form__row {
-                grid-template-columns: 1fr;
-            }
-
-            .social__links {
-                grid-template-columns: 1fr;
-            }
-
-            .collaboration-cta {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .cta__features {
-                grid-template-columns: 1fr;
-            }
-
-            .cta__buttons {
-                justify-content: center;
-            }
-        }
-    </style>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contact-form');
-            
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Get form data
-                const formData = new FormData(contactForm);
-                const name = formData.get('name');
-                const email = formData.get('email');
-                const subject = formData.get('subject');
-                const message = formData.get('message');
-                const newsletter = formData.get('newsletter');
-                
-                // Simulate form submission
-                const submitButton = contactForm.querySelector('.form__submit');
-                const originalText = submitButton.innerHTML;
-                
-                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-                submitButton.disabled = true;
-                
-                setTimeout(() => {
-                    alert(`Thank you, ${name}! Your message has been sent. I'll get back to you soon.`);
-                    contactForm.reset();
-                    submitButton.innerHTML = originalText;
-                    submitButton.disabled = false;
-                }, 2000);
-            });
-            
-            // Smooth scroll to form when CTA button is clicked
-            const ctaButton = document.querySelector('a[href="#contact-form"]');
-            if (ctaButton) {
-                ctaButton.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    document.getElementById('contact-form').scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                });
-            }
-        });
-    </script>
 </body>
 </html>
