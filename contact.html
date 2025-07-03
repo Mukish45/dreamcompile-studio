@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mukish | Data Scientist & AI Enthusiast</title>
+    <meta name="description" content="Get in touch with me for collaborations, consultations, or just to chat about AI and technology.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo">
+                    <span class="gradient-text">Mukish</span>
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link active">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" style="padding: 8rem 0 3rem;">
+            <div class="container">
+                <div class="hero__content" style="grid-template-columns: 1fr; text-align: center;">
+                    <div class="hero__text fade-in">
+                        <h1 class="hero__title">
+                            Let's <span class="gradient-text">Connect</span>
+                        </h1>
+                        <p class="hero__description" style="max-width: 600px; margin: 0 auto;">
+                            Whether you have a project in mind, want to collaborate, or just want to chat about AI and technology, 
+                            I'd love to hear from you. Drop me a message and let's build something amazing together!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="contact__content">
+                    <!-- Contact Form -->
+                    <div class="contact__form-section slide-up">
+                        <h2 class="contact__title">Send me a message</h2>
+                        <form class="contact__form" id="contact-form">
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <label for="name" class="form__label">Your Name</label>
+                                    <input type="text" id="name" name="name" class="form__input" required>
+                                </div>
+                                <div class="form__group">
+                                    <label for="email" class="form__label">Email Address</label>
+                                    <input type="email" id="email" name="email" class="form__input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="subject" class="form__label">Subject</label>
+                                <select id="subject" name="subject" class="form__input" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="collaboration">Collaboration Opportunity</option>
+                                    <option value="consultation">AI/ML Consultation</option>
+                                    <option value="project">Project Discussion</option>
+                                    <option value="speaking">Speaking Engagement</option>
+                                    <option value="mentorship">Mentorship Request</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="message" class="form__label">Your Message</label>
+                                <textarea id="message" name="message" rows="6" class="form__input" placeholder="Tell me about your project, ideas, or questions..." required></textarea>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter" class="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    Subscribe to my newsletter for AI insights and updates
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--large form__submit">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact__info-section slide-up">
+                        <h2 class="contact__title">Get in touch</h2>
+                        
+                        <div class="contact__info">
+                            <div class="contact__item">
+                                <div class="contact__icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact__details">
+                                    <h3>Email</h3>
+                                    <p>mukish@example.com</p>
+                                    <span>I usually respond within 24 hours</span>
+                                </div>
+                            </div>
+
+                            <div class="contact__item">
+                                <div class="contact__icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact__details">
+                                    <h3>Phone</h3>
+                                    <p>+1 (555) 123-4567</p>
+                                    <span>Available for calls on weekdays</span>
+                                </div>
+                            </div>
+
+                            <div class="contact__item">
+                                <div class="contact__icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact__details">
+                                    <h3>Location</h3>
+                                    <p>San Francisco, CA</p>
+                                    <span>Open to remote work & travel</span>
+                                </div>
+                            </div>
+
+                            <div class="contact__item">
+                                <div class="contact__icon">
+                                    <i class="fas fa-calendar"></i>
+                                </div>
+                                <div class="contact__details">
+                                    <h3>Availability</h3>
+                                    <p>Currently accepting new projects</p>
+                                    <span>1-2 week turnaround for initial response</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="contact__social">
+                            <h3>Connect on social media</h3>
+                            <div class="social__links">
+                                <a href="#" class="social__link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="#" class="social__link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="#" class="social__link" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#" class="social__link" aria-label="Medium">
+                                    <i class="fab fa-medium"></i>
+                                    <span>Medium</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- FAQ -->
+                        <div class="contact__faq">
+                            <h3>Quick Questions</h3>
+                            <div class="faq__item">
+                                <div class="faq__question">
+                                    <i class="fas fa-question-circle"></i>
+                                    What's your hourly rate for consulting?
+                                </div>
+                                <div class="faq__answer">
+                                    My consulting rates vary based on project scope and timeline. 
+                                    Let's discuss your specific needs!
+                                </div>
+                            </div>
+                            <div class="faq__item">
+                                <div class="faq__question">
+                                    <i class="fas fa-question-circle"></i>
+                                    Do you work on long-term projects?
+                                </div>
+                                <div class="faq__answer">
+                                    Yes! I'm open to both short-term consulting and long-term partnerships.
+                                </div>
+                            </div>
+                            <div class="faq__item">
+                                <div class="faq__question">
+                                    <i class="fas fa-question-circle"></i>
+                                    Can you help with AI strategy?
+                                </div>
+                                <div class="faq__answer">
+                                    Absolutely! I love helping companies develop their AI roadmap and implementation strategy.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section" style="background: var(--bg-secondary);">
+            <div class="container">
+                <div class="collaboration-cta fade-in">
+                    <div class="cta__content">
+                        <h2 class="cta__title">Ready to Start Something Amazing?</h2>
+                        <p class="cta__description">
+                            I'm always excited to work on innovative projects that push the boundaries of AI and technology. 
+                            Whether you're a startup looking to implement AI or an enterprise seeking to optimize your ML pipeline, 
+                            let's explore how we can work together.
+                        </p>
+                        
+                        <div class="cta__features">
+                            <div class="feature__item">
+                                <i class="fas fa-rocket"></i>
+                                <h4>AI Implementation</h4>
+                                <p>From prototype to production-ready AI solutions</p>
+                            </div>
+                            <div class="feature__item">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Data Strategy</h4>
+                                <p>Maximize the value of your data assets</p>
+                            </div>
+                            <div class="feature__item">
+                                <i class="fas fa-users"></i>
+                                <h4>Team Training</h4>
+                                <p>Upskill your team in modern AI practices</p>
+                            </div>
+                            <div class="feature__item">
+                                <i class="fas fa-lightbulb"></i>
+                                <h4>Innovation Consulting</h4>
+                                <p>Strategic guidance for AI-driven innovation</p>
+                            </div>
+                        </div>
+                        
+                        <div class="cta__buttons">
+                            <a href="#contact-form" class="btn btn--primary btn--large">
+                                <i class="fas fa-comment"></i>
+                                Start the Conversation
+                            </a>
+                            <a href="about.html" class="btn btn--secondary btn--large">
+                                <i class="fas fa-user"></i>
+                                Learn More About Me
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="cta__visual">
+                        <div class="visual__item">
+                            <div class="visual__icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__main">
+                    <div class="footer__brand">
+                        <h3 class="gradient-text">Mukish</h3>
+                        <p>Data Scientist & AI Enthusiast</p>
+                    </div>
+                    
+                    <div class="footer__links">
+                        <div class="footer__section">
+                            <h4 class="footer__title">Navigation</h4>
+                            <ul class="footer__list">
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer__section">
+                            <h4 class="footer__title">Connect</h4>
+                            <div class="footer__social">
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer__bottom">
+                    <p>&copy; 2023 Mukish. All rights reserved.</p>
+                    <p>Built with passion and lots of coffee ☕</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+
+    <style>
+        .contact__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact__title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+        }
+
+        .contact__form {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .form__row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form__group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form__label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .form__input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 0.5rem;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form__input:focus {
+            outline: none;
+            border-color: var(--primary-500);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .form__input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            cursor: pointer;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .checkbox {
+            opacity: 0;
+            position: absolute;
+        }
+
+        .checkbox-custom {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 0.25rem;
+            background: var(--bg-primary);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .checkbox:checked + .checkbox-custom {
+            background: var(--primary-500);
+            border-color: var(--primary-500);
+        }
+
+        .checkbox:checked + .checkbox-custom::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .form__submit {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .contact__info {
+            margin-bottom: 2rem;
+        }
+
+        .contact__item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border-radius: 0.75rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .contact__item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px var(--shadow-color);
+        }
+
+        .contact__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            background: linear-gradient(135deg, var(--primary-500), var(--accent-purple));
+            border-radius: 0.75rem;
+            color: white;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .contact__details h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: var(--text-primary);
+        }
+
+        .contact__details p {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+            color: var(--text-primary);
+        }
+
+        .contact__details span {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .contact__social {
+            margin-bottom: 2rem;
+        }
+
+        .contact__social h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .social__links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .social__link {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 0.75rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social__link:hover {
+            background: var(--primary-500);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .social__link i {
+            font-size: 1.25rem;
+        }
+
+        .contact__faq h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .faq__item {
+            margin-bottom: 1rem;
+        }
+
+        .faq__question {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .faq__question i {
+            color: var(--primary-500);
+        }
+
+        .faq__answer {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-left: 2rem;
+        }
+
+        .collaboration-cta {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .cta__features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature__item {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--bg-primary);
+            border-radius: 0.75rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature__item i {
+            font-size: 2rem;
+            color: var(--primary-500);
+            margin-bottom: 1rem;
+        }
+
+        .feature__item h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .feature__item p {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .cta__buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .visual__item {
+            text-align: center;
+        }
+
+        .visual__icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 8rem;
+            height: 8rem;
+            background: linear-gradient(135deg, var(--primary-500), var(--accent-purple));
+            border-radius: 50%;
+            font-size: 3rem;
+            color: white;
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @media (max-width: 768px) {
+            .contact__content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .form__row {
+                grid-template-columns: 1fr;
+            }
+
+            .social__links {
+                grid-template-columns: 1fr;
+            }
+
+            .collaboration-cta {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .cta__features {
+                grid-template-columns: 1fr;
+            }
+
+            .cta__buttons {
+                justify-content: center;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(contactForm);
+                const name = formData.get('name');
+                const email = formData.get('email');
+                const subject = formData.get('subject');
+                const message = formData.get('message');
+                const newsletter = formData.get('newsletter');
+                
+                // Simulate form submission
+                const submitButton = contactForm.querySelector('.form__submit');
+                const originalText = submitButton.innerHTML;
+                
+                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitButton.disabled = true;
+                
+                setTimeout(() => {
+                    alert(`Thank you, ${name}! Your message has been sent. I'll get back to you soon.`);
+                    contactForm.reset();
+                    submitButton.innerHTML = originalText;
+                    submitButton.disabled = false;
+                }, 2000);
+            });
+            
+            // Smooth scroll to form when CTA button is clicked
+            const ctaButton = document.querySelector('a[href="#contact-form"]');
+            if (ctaButton) {
+                ctaButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.getElementById('contact-form').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
